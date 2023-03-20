@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="TestEdge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.testng.facebook.FacebookTestNG">
+        <methods>
+          <include name="openChrome_Fb"/>
+          <include name="screenShot"/>
+          <include name="loggingIn"/>
+          <include name="screenShot_CreateNewAccErr"/>
+          <include name="titleUrlCheck"/>
+          <include name="createAcc"/>
+        </methods>
+      </class> <!-- com.testng.facebook.FacebookTestNG -->
+    </classes>
+  </test> <!-- TestEdge(failed) -->
+</suite> <!-- Failed suite [Suite] -->
